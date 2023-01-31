@@ -1,0 +1,74 @@
+
+.AboutBody{
+    display: flex;
+    /* border: 2px solid fuchsia; */
+    width: 98%;
+    margin: 0;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    justify-content: space-around;
+  
+  }
+  
+  
+  .PhotoContainer{
+   
+    height: 480px;
+    width: 400px;
+    border-radius: 15px;
+    background-image: url('../../../public/images/personal.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+  
+  
+  .PhotoContainer:hover{
+    /* filter: grayscale(80%); */
+    transform: scale(1.1);
+    transition: 500ms;
+  }
+  
+  .StyledHeading {
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
+    color: #1eb2a6;
+  }
+  
+  .TextSection{
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: justify;
+    font-size: 1.1Rem;
+    width:500px;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .AboutBody{
+      flex-direction: column;
+      align-items: center;
+    }
+    .TextSection,.StyledHeading{
+      width: 90%;
+      margin: 0 auto;
+    }
+   
+    .PhotoContainer{
+      margin-top:2rem;
+      margin-bottom: 2rem;
+    }
+  }
+  
+  @media screen and (max-width: 620px) {
+    .PhotoContainer{
+      width: 320px;
+      height: 320px;
+    }
+  }
+  @media screen and (max-width: 290px) {
+    .PhotoContainer{
+      width: 270px;
+      height: 270px;
+    }
+  }

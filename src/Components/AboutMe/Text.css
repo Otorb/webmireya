@@ -1,0 +1,25 @@
+/* .mainTitleTextoHome2{
+	width: 95%;
+	margin: 0 auto;
+	text-align:left;
+}
+ */
+
+.sliderDescription { 
+	width: 90%;
+	text-align: justify;
+	font-size: 1.1rem;
+	margin: 0 auto;
+	line-height: 1.5rem; 
+}
+
+@media only screen and (max-width: 400px) {
+	.sliderDescription { 
+		font-size: 1.3rem;
+		
+
+	}
+	.mainTitleTextoHome2{
+		text-align: center;
+	}
+}
