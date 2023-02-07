@@ -5,6 +5,7 @@ import Header from "./Components/Header/Header";
 import Contact from "./Components/Contact/Contact";
 import SobreMi from "./Components/AboutMe/SobreMi";
 import Clases from "./Components/Users/Clases";
+import Precios from "./Components/Precios/Precios";
 import "./App.css";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route exact path="/contact" element={<Contact />} />
         <Route exact path="/about" element={<SobreMi />} />
         <Route exact path="/clases" element={<Clases />} />
+        <Route exact path="/precios" element={<Precios />} />
       </Routes>
       <Footer />
     </div>

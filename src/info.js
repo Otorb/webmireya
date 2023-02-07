@@ -63,3 +63,26 @@ export const homeAbout = [
       cover: "https://i0.wp.com/lasmatesfaciles.com/wp-content/uploads/2020/10/image-7.png?resize=392%2C393&ssl=1",
     },
   ]
+
+  export const price = [
+    {
+      name: "Grupales",
+      price: "5",
+      desc: "Para grupos de 5 alumnos que tengan la misma problemática (precio por alumno).",
+    },
+    {
+      name: "Virtual",
+      price: "10",
+      desc: "Clases a través de la plataforma ZOOM (precio por clase).",
+    },
+    {
+      name: "Presencial",
+      price: "15",
+      desc: "Clases en lugares específicos (Sólo aplica en Caracas-Venezuela).",
+    },
+    {
+      name: "Domicilio",
+      price: "20",
+      desc: "Sólo aplica en Caracas-Venezuela.",
+    },
+  ]

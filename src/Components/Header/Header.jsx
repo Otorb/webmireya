@@ -19,8 +19,8 @@ function Header() {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/courses" style={{ color: "black" }}>
-                Clases
+              <Link to="/precios" style={{ color: "black" }}>
+                Precios
               </Link>
             </li>
             <li>

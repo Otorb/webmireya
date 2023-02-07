@@ -11,10 +11,12 @@ function Contact() {
 
     emailjs
       .sendForm(
-        "service_d4n8uu8",
-        "template_b91p3lr",
+        "service_99r4kuy",
+        "template_qweik2s",
         e.target,
-        "m161GBw_7jaymvDc3",
+        /* "u1W0PSDVrZHmTdhGBrhGp", */
+        '7lKAr0QQPtaCO09cU',
+        /* "m161GBw_7jaymvDc3", */
         alert("Su mensaje ha sido enviado, pronto te responderemos")
       )
       .then((res) => console.log(res))
@@ -24,20 +26,33 @@ function Contact() {
 
   return (
     <div className="wrapper">
-      <form className="form">
+      <form className="form" onSubmit={(e) => sendEmail(e)}>
         <div className="pageTitle title">Contacto </div>
         <div className="secondaryTitle title">
           Envía tu comentario o sugerencia.
         </div>
-        <input type="text" className="name formEntry" placeholder="Nombre" />
-        <input type="text" className="email formEntry" placeholder="Correo" />
-        <textarea className="message formEntry" placeholder="Mensaje"></textarea>
+        <input
+          type="text"
+          className="name formEntry"
+          name="name"
+          placeholder="Nombre"
+        />
+        <input
+          type="text"
+          className="email formEntry"
+          name="correo"
+          placeholder="Correo"
+        />
+        <textarea
+          className="message formEntry"
+          name="mensaje"
+          placeholder="Mensaje"
+        ></textarea>
         <button className="submit formEntry" onclick="thanks()">
           Enviar
-        </button> 
+        </button>
       </form>
     </div>
   );
 }
 export default Contact;
-
